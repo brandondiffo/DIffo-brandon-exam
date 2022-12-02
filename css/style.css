@@ -19,24 +19,7 @@
 .carousel-caption{
     top: 300px;
 }
-/* .carousel-item h2{
-    font-size: 40px;
-    font-family: bold;
 
-}
-.carousel-item p{
-    font-size: px;
-    margin-top: 20%;
-}
-.carousel-item a{
-    width: 60px;
-    height: 80px;
-    top: 10%;
-    color: black;
-    text-decoration: none;
-    background-color: yellow;
-    border: 1px solid black;
-} */
 .carousel-control-prev ,.carousel-control-next{
     top: 350px;
 }
@@ -53,8 +36,10 @@
 .page{
     margin-top: 7%;
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between; 
+}
+.page div{
+    flex-direction: column;
 }
 .bocs{
     flex-basis: 31%;
@@ -94,18 +79,25 @@ button{
     text-align: center;
     margin-bottom: 40px;
 }
-.container-sec{
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-}
-.cards img{
-    width: 200px;
+.card-radius img{
     height: 200px;
+    width: 200px;
     border-radius: 50%;
+    position: relative;
+    justify-content: space-around;
+    padding: 10px;
+    
 }
-.conctats .mb-3{
-    border: 1px solid black;
-    text-align: center;
-    width: 40%;
+.card-shadow:hover{
+    box-shadow: 6px 6px 9px rgb(179, 165, 165);
+}
+.card-radius{
+    box-shadow: 6px 6px 9px rgb(179, 165, 165);
+}
+.card-radius span{
+    padding: 10px;
+}
+
+.card-radius p{
+    text-align: justify;
 }
